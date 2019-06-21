@@ -24,7 +24,7 @@ The Motivation for this project is to use **Python 3** & **SQL** to go through e
 3. Star Schema over Snowflake for DW Modeling
 4. Pandas / SQLAlchemy / Regex For ETL  
 5. Matplotlib / Seaborn For on site Analysis
-6. Dash/Plotly for final reporting
+6. Dash/Plotly for final reporting | Second Option Apache Superset
 7. SQLite as DB
 8. Git for version control
 9. Agile over Waterfall for Project Development
