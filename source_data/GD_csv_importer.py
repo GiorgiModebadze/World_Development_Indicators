@@ -28,16 +28,16 @@ for file1 in main_list:
 
         BI_Project = drive.ListFile({'q': f"'{file1['id']}' in parents and trashed=false"}).GetList()
 
-        for file in BI_Project:
+        for file2 in BI_Project:
 
-            if 'World_Bank_Indexes' in file['title']:
+            if 'World_Bank_Indexes' in file2['title']:
 
-                World_Bank_Indexes = drive.ListFile({'q': f"'{file['id']}' in parents and trashed=false"}).GetList()
+                World_Bank_Indexes = drive.ListFile({'q': f"'{file2['id']}' in parents and trashed=false"}).GetList()
 
-                for file in World_Bank_Indexes:
-                    if '.csv' in file['title']:
+                for file3 in World_Bank_Indexes:
+                    if '.csv' in file3['title']:
                         start = time.time()
-                        file.GetContentFile(file['title'])
+                        file3.GetContentFile(file3['title'])
                         end = time.time()
 
-                        print(f"file {file['title']} was downloaded in {end - start} seconds")
+                        print(f"file {file3['title']} was downloaded in {end - start} seconds")
